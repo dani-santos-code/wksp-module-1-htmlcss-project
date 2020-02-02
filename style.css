@@ -205,3 +205,52 @@ h4 {
   color: white;
   text-align: right;
 }
+
+/*-----------CARD LIST-----------*/
+
+.card-list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-container {
+  cursor: pointer;
+  overflow: hidden;
+  height: 266px;
+  text-align: center;
+  position: relative;
+}
+
+.card-container img {
+  width: 100%;
+  transition: transform 0.25s ease-out;
+}
+
+.card-container:hover img {
+  width: 100%;
+  transform: scale(1.05);
+}
+
+.card-container p {
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.25s ease-out;
+  opacity: 0;
+}
+
+.card-container:hover p {
+  opacity: 1;
+}
