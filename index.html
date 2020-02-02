@@ -13,17 +13,20 @@
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="./assets/infinity-logo.svg" />
-      <nav>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#advantages">Advantages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#products">Products</a></li>
-        </ul>
-      </nav>
+      <div class="container header__content">
+        <img class="logo" src="./assets/infinity-logo.svg" />
+        <nav>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#products">Products</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section id="features" class="features">
+      <div class="container">
       <div class="features__content">
         <h1 class="features__title">Introducing Falcon 9</h1>
         <div class="features__info">
@@ -40,9 +43,11 @@
             </p>
           </div>
         </div>
-      </div>
+    </div>
     </section>
     <section id="#advantages" class="advantages">
+    <div class="container">
+      <div class="container advantages--content">
       <div class="advantages__card">
         <img class="advantages__card--logo" src="./assets/checkmark.svg" />
         <h3 class="advantages__card--subtitle">Amazing feature 1</h3>
@@ -70,6 +75,19 @@
         </p>
         <button class="advantages__card--button">Do it</button>
       </div>
+      </div>
+    </div>
+    </section>
+    <section class="additional-info">
+    <div class="container additional-info__content">
+      <h4 class="additional-info--title">Some Cool Text</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fugit
+        rem soluta quo accusamus beatae incidunt. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Magni fugit rem soluta quo accusamus
+        beatae incidunt.
+      </p>
+    </div>
     </section>
   </body>
 </html>
