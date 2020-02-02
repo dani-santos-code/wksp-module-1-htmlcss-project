@@ -104,3 +104,44 @@ h1 {
 .features__info--content p {
   padding-right: 20px;
 }
+
+/*-----------ADVANTAGES-----------*/
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.advantages__card {
+  border: 1px solid#ecebec;
+  box-shadow: 5px 5px 10px #ccc;
+  border-radius: 2px;
+  padding: 40px;
+}
+
+.advantages__card--logo {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.advantages__card--subtitle {
+  text-align: center;
+}
+
+.advantages__card--text {
+  text-align: center;
+  color: #acabac;
+}
+
+.advantages__card--button {
+  background-color: #393532;
+  border-radius: 3px;
+  width: 100%;
+  height: 48px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
