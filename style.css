@@ -212,7 +212,7 @@ nav ul li:last-child:hover ul {
 /*-----------ADDITIONAL INFO-----------*/
 
 .additional-info__content {
-  padding: 50px 0 200px;
+  padding: 50px 20px 200px;
 }
 
 .additional-info {
@@ -252,6 +252,12 @@ nav ul li:last-child:hover ul {
   );
   color: white;
   text-align: right;
+}
+
+@media (max-width: 780px) {
+  h4 {
+    font-size: 30px;
+  }
 }
 
 /*-----------CARD LIST-----------*/
