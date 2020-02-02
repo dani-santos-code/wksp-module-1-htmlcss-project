@@ -246,7 +246,7 @@ h4 {
 .card-container {
   cursor: pointer;
   overflow: hidden;
-  height: 240px;
+  height: 200px;
   text-align: center;
   position: relative;
 }
@@ -290,6 +290,11 @@ h4 {
   }
   .card-container {
     height: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  .card-list {
+    grid-template-columns: 1fr;
   }
 }
 
