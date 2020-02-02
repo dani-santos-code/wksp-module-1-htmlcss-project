@@ -165,14 +165,30 @@ h4 {
 .additional-info__content {
   padding: 50px 0 200px;
 }
+
 .additional-info {
   width: 100%;
+  position: relative;
   background-color: #393532;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
 
+.additional-info__box {
+  width: 300px;
+  border: 4px solid white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: -40px;
+}
+
 .additional-info--title {
   color: white;
+}
+
+.additional-info__box--title {
+  color: red;
+  font-size: 1.2rem;
 }
