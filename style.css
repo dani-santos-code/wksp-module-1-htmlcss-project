@@ -71,10 +71,29 @@ h4 {
   justify-content: space-between;
 }
 
+.header__dropdown {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+nav ul li:last-child:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .header__dropdown a {
   padding: 10px;
   color: white;
   text-decoration: none;
+}
+
+.header__dropdown li {
+  display: inline-block;
+  background-color: #454040;
 }
 
 .logo {
