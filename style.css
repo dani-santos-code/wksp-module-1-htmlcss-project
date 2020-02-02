@@ -342,6 +342,11 @@ h4 {
   border-bottom: 0;
 }
 
+.footer__list a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .footer__list--wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
