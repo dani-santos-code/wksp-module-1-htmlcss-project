@@ -13,17 +13,25 @@
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="./assets/infinity-logo.svg" />
-      <nav>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#advantages">Advantages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#products">Products</a></li>
-        </ul>
-      </nav>
+      <div class="container header__content">
+        <a href="#"><img class="header__logo" src="./assets/infinity-logo.svg" /></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#">Products</a>
+                <ul class="header__dropdown">
+                    <li><a href="https://en.wikipedia.org/wiki/Falcon_9" target="_blank">Falcon9</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Falcon_9" target="_blank">Falcon9</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Falcon_9" target="_blank">Falcon9</a></li>
+            </ul></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section id="features" class="features">
+      <div class="container">
       <div class="features__content">
         <h1 class="features__title">Introducing Falcon 9</h1>
         <div class="features__info">
@@ -40,7 +48,144 @@
             </p>
           </div>
         </div>
+    </div>
+    </section>
+    <section id="advantages" class="advantages">
+    <div class="container">
+      <div class="container advantages--content">
+      <div class="advantages__card">
+        <img class="advantages__card--logo" src="./assets/checkmark.svg" />
+        <h3 class="advantages__card--subtitle">Amazing feature 1</h3>
+        <p class="advantages__card--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum
+          animi, aut consectetur sint distinctio.
+        </p>
+        <button class="advantages__card--button">Get it</button>
       </div>
+      <div class="advantages__card">
+        <img class="advantages__card--logo" src="./assets/refresh.svg" />
+        <h3 class="advantages__card--subtitle">Amazing feature 2</h3>
+        <p class="advantages__card--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum
+          animi, aut consectetur sint distinctio.
+        </p>
+        <button class="advantages__card--button">Sell it</button>
+      </div>
+      <div class="advantages__card">
+        <img class="advantages__card--logo" src="./assets/fingerprint.svg" />
+        <h3 class="advantages__card--subtitle">Amazing feature 3</h3>
+        <p class="advantages__card--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum
+          animi, aut consectetur sint distinctio.
+        </p>
+        <button class="advantages__card--button">Do it</button>
+      </div>
+      </div>
+    </div>
+    </section>
+    <section class="additional-info">
+    <div class="container additional-info__content">
+      <h4 class="additional-info--title">Some Cool Text</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fugit
+        rem soluta quo accusamus beatae incidunt. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Magni fugit rem soluta quo accusamus
+        beatae incidunt.
+      </p>
+      <div class="additional-info__box">
+          <span class="additional-info__box--title">This looks cool</span>
+          <p>Hover for me for a surprise</p>
+      </div>
+    </div>
+    </section>
+    <section class="additional-info gradient">
+        <div class="container additional-info__content">
+          <h4 class="additional-info--title">Slick Gradient</h4>
+          <p>
+            Lorem ipsum?
+          </p>
+        </div>
+    </section>
+    <section id="gallery" class="card-list">
+        <div class="card-container">
+            <img
+			alt="Car"
+			src="https://source.unsplash.com/lrmo2hlFYE4">
+		    <p>Car</p>
+        </div>
+        <div class="card-container">
+            <img
+			alt="Cat hiding"
+			src="https://source.unsplash.com/NodtnCsLdTE">
+		    <p>Cool Cat</p>
+        </div>
+        <div class="card-container">
+            <img
+			alt="Bullet train"
+			src="https://source.unsplash.com/3ba59K57wE4">
+		    <p>Speedy Trip</p>
+        </div>
+        <div class="card-container">
+            <img
+			alt="Cute Cat"
+			src="https://source.unsplash.com/GtwiBmtJvaU">
+		    <p>Cute Cat</p>
+        </div>
+        <div class="card-container">
+            <img
+			alt="Crazy Rocket"
+			src="https://source.unsplash.com/UzOKDfoRrDU">
+		    <p>Rocket</p>
+        </div>
+        <div class="card-container">
+            <img
+			alt="Kitten"
+			src="https://source.unsplash.com/w12NAMymqnk">
+		    <p>Kitten</p>
+        </div>
+    </section>
+    <section class="footer">
+        <form class="footer__form" method="" name="email-form" id ="email-form" action="">
+            <fieldset class="footer__input-wrapper">
+                <label class="footer__label" for="email">Register to our mailing list:</label>
+                <div class="footer__logo--wrapper">
+                    <input class="footer__input" type="email" id="email" required/>
+                    <input class="footer__submit" type="submit" value="">
+                </div>
+                <div>
+                    <input class="footer__checkbox" type="checkbox" id="cat-images-confirmation" name="cat-images-confirmation" />
+                    <label for="cat-images-confirmation">Send me daily cat images</label>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <section class="footer footer__list">
+        <div class="footer__list--wrapper">
+            <ul class="footer__list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal Notes</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal Notes</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal Notes</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal Notes</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+        </div>
     </section>
   </body>
 </html>
